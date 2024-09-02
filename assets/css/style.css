@@ -1,0 +1,114 @@
+@import url('https://fonts.cdnfonts.com/css/brittany-signature');
+
+@font-face {
+    font-family: 'ABCGinto';
+    src: local('ABCGinto'), local('ABCGinto-Regular'),
+    url('../font/ABCGintoNormalVariable.woff2') format('woff2'),
+    url('../font/ABCGintoNormalVariable.woff') format('woff'),
+    url('../font/ABCGintoNormalVariable.ttf') format('truetype');
+}
+
+:root {
+    --bg-color: rgb(35, 39, 42);
+    --text-color: #dfdfdf;
+    --link-hover-color: #9e9fa0;
+    --button-bg-color: #404249;
+    --button-hover-bg-color: #5865F2;
+}
+
+html, body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    padding: 0;
+    margin: 0;
+    font-family: 'ABCGinto', 'ABCGinto-Regular', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
+    'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    height: 100%;
+}
+
+.container {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    box-sizing: border-box;
+}
+
+.image {
+    max-width: 100%;
+    height: auto;
+}
+
+.description {
+    font-size: 1.3rem;
+    text-align: center;
+    margin: 1.5rem 0;
+}
+
+.download {
+    color: var(--text-color);
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.download:hover {
+    color: var(--link-hover-color);
+}
+
+.ts-connect-btn {
+    display: inline-block;
+    padding: 0.8em 1.5em;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    background-color: var(--button-bg-color);
+    color: #fcfcfc;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.ts-connect-btn:hover {
+    background-color: var(--button-hover-bg-color);
+}
+
+.footer-text {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    font-size: 1.2rem;
+    color: #888;
+    font-family: 'Brittany Signature', sans-serif;
+}
+
+@media screen and (max-width: 768px) {
+    .description {
+        font-size: 1rem;
+    }
+
+    .footer-text {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .container {
+        padding: 1rem;
+    }
+
+    .description {
+        font-size: 0.9rem;
+    }
+
+    .ts-connect-btn {
+        font-size: 0.9rem;
+    }
+
+    .footer-text {
+        font-size: 0.8rem;
+    }
+}
