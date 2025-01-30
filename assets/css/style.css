@@ -23,6 +23,16 @@
     --discord-blurple-hover-bg-color: #5865F2;
 }
 
+::selection {
+    color: white;
+    background: var(--discord-blurple-hover-bg-color);
+}
+
+::-moz-selection {
+    color: white;
+    background: var(--discord-blurple-hover-bg-color);
+}
+
 html, body {
     background-color: var(--bg-color);
     color: var(--text-color);
@@ -81,16 +91,6 @@ html, body {
 
 .main-button:hover {
     background-color: var(--discord-blurple-hover-bg-color);
-}
-
-::selection {
-    color: white;
-    background: var(--discord-blurple-hover-bg-color);
-}
-
-::-moz-selection {
-    color: white;
-    background: var(--discord-blurple-hover-bg-color);
 }
 
 .footer-paths {
