@@ -1,11 +1,7 @@
-@import url('https://fonts.cdnfonts.com/css/brittany-signature');
-
 @font-face {
     font-family: 'ABCGinto';
     src: local('ABCGinto'), local('ABCGinto-Regular'),
-    url('../fonts/ABCGintoNormalVariable.woff2') format('woff2'),
-    url('../fonts/ABCGintoNormalVariable.woff') format('woff'),
-    url('../fonts/ABCGintoNormalVariable.ttf') format('truetype');
+    url('../fonts/ABCGintoNormalVariable.woff') format('woff');
 }
 
 @font-face {
