@@ -3,9 +3,16 @@
 @font-face {
     font-family: 'ABCGinto';
     src: local('ABCGinto'), local('ABCGinto-Regular'),
-    url('../font/ABCGintoNormalVariable.woff2') format('woff2'),
-    url('../font/ABCGintoNormalVariable.woff') format('woff'),
-    url('../font/ABCGintoNormalVariable.ttf') format('truetype');
+    url('../fonts/ABCGintoNormalVariable.woff2') format('woff2'),
+    url('../fonts/ABCGintoNormalVariable.woff') format('woff'),
+    url('../fonts/ABCGintoNormalVariable.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Brittany Signature';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Brittany Signature'), url('../fonts/BrittanySignature-LjyZ.woff') format('woff');
 }
 
 :root {
@@ -13,7 +20,7 @@
     --text-color: #dfdfdf;
     --link-hover-color: #9e9fa0;
     --button-bg-color: #404249;
-    --button-hover-bg-color: #5865F2;
+    --discord-blurple-hover-bg-color: #5865F2;
 }
 
 html, body {
@@ -73,17 +80,17 @@ html, body {
 }
 
 .main-button:hover {
-    background-color: var(--button-hover-bg-color);
+    background-color: var(--discord-blurple-hover-bg-color);
 }
 
 ::selection {
     color: white;
-    background: var(--button-hover-bg-color);
+    background: var(--discord-blurple-hover-bg-color);
 }
 
 ::-moz-selection {
     color: white;
-    background: var(--button-hover-bg-color);
+    background: var(--discord-blurple-hover-bg-color);
 }
 
 .footer-paths {

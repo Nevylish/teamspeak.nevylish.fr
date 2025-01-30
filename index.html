@@ -5,16 +5,23 @@
     <meta charset="UTF-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="Nevylish" name="author">
-    <meta content="Lien du serveur TeamSpeak: ts.nevylish.ch" name="description">
+    <meta content="Cliquez sur ce lien pour vous connecter au serveur TeamSpeak. Liste des noms de domaines: (teamspeak, ts, voice).nevylish.fr & .nevylish.ch" name="description">
+    <meta content="Connexion au serveur TeamSpeak - Nevylish" property="og:title"/>
+    <meta content="website" property="og:type"/>
+    <meta content="https://teamspeak.nevylish.fr" property="og:url"/>
+    <meta content="https://teamspeak.nevylish.fr/assets/images/favicon.ico" property="og:image"/>
+    <meta content="Cliquez sur ce lien pour vous connecter au serveur TeamSpeak. Liste des noms de domaines: (teamspeak, ts, voice).nevylish.fr & .nevylish.ch"
+          property="og:description"/>
+    <meta content="#5865F2" name="theme-color">
     <link href="assets/images/favicon.ico" rel="icon" type="image/png"/>
     <link href="assets/css/style.css?v=<?= time(); ?>" rel="stylesheet">
 </head>
 <body>
 <div class="container">
     <picture>
-        <source media="(max-width: 480px)" srcset="assets/images/image-mobile.png">
+        <source media="(max-width: 480px)" srcset="assets/images/mobile.png">
         <img alt="Ouvrir TeamSpeak 3 > Connexions > Pseudo ou adresse serveur: ts.nevylish.ch > Se connecter"
-             class="image" src="assets/images/image-desktop.png">
+             class="image" src="assets/images/desktop.png">
     </picture>
     <p class="main-description">
         Vous pouvez cliquer sur le bouton ci-dessous pour ouvrir <a class="download"
@@ -22,7 +29,7 @@
                                                                     target="_blank">TeamSpeak</a> et vous connecter
         automatiquement ou entrer le lien comme sur l'image ci-dessus.
     </p>
-    <a id="teamspeak-link" class="main-button">
+    <a class="main-button" id="teamspeak-link">
         Ouvrir TeamSpeak
     </a>
     <div class="footer-paths">Liste des noms de domaines: (teamspeak, ts, voice).nevylish.fr & .nevylish.ch</div>
@@ -37,4 +44,3 @@
     });
 </script>
 </html> <!-- Pourquoi tu regardes ici? Tu penses trouver quelque chose d'intéressant??? -->
-<!-- Liste des noms de domaines: teamspeak.nevylish.fr, ts.nevylish.fr, voice.nevylish.fr, teamspeak.nevylish.ch, ts.nevylish.ch, voice.nevylish.ch-->
