@@ -1,0 +1,1 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/5c9d3bed-eb41-42e4-840d-5c82e4d0f21e/deploy-status)](https://app.netlify.com/sites/teamspeak/deploys)
