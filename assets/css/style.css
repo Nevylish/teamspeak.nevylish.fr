@@ -135,6 +135,7 @@ html, body {
     .footer-paths {
         font-size: 0.8rem;
         margin-left: 0.6rem;
+        margin-bottom: 0.4rem;
     }
 
     .footer-watermark {
