@@ -13,18 +13,27 @@
 <div class="container">
     <picture>
         <source media="(max-width: 480px)" srcset="assets/images/image-mobile.png">
-        <img alt="Ouvrir TeamSpeak 3 > Connexions > Pseudo ou adresse serveur: ts.nevylish.ch > Se connecter" class="image" src="assets/images/image-desktop.png">
+        <img alt="Ouvrir TeamSpeak 3 > Connexions > Pseudo ou adresse serveur: ts.nevylish.ch > Se connecter"
+             class="image" src="assets/images/image-desktop.png">
     </picture>
-    <p class="description">
+    <p class="main-description">
         Vous pouvez cliquer sur le bouton ci-dessous pour ouvrir <a class="download"
                                                                     href="https://www.teamspeak.com/fr/downloads/#ts3client"
                                                                     target="_blank">TeamSpeak</a> et vous connecter
         automatiquement ou entrer le lien comme sur l'image ci-dessus.
     </p>
-    <a class="ts-connect-btn" href="ts3server://ts.nevylish.ch/">
+    <a id="teamspeak-link" class="main-button">
         Ouvrir TeamSpeak
     </a>
-    <div class="footer-text">Nevylish</div>
+    <div class="footer-paths">Liste des noms de domaines: (teamspeak, ts, voice).nevylish.fr & .nevylish.ch</div>
+    <div class="footer-watermark">Nevylish</div>
 </div>
 </body>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const domain = window.location.hostname;
+        const teamspeakLink = document.getElementById('teamspeak-link');
+        teamspeakLink.href = `ts3server://${domain}/`;
+    });
+</script>
 </html> <!-- Pourquoi tu regardes ici? Tu penses trouver quelque chose d'intéressant??? -->

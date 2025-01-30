@@ -41,7 +41,7 @@ html, body {
     height: auto;
 }
 
-.description {
+.main-description {
     font-size: 1.3rem;
     text-align: center;
     margin: 1.5rem 0;
@@ -57,7 +57,7 @@ html, body {
     color: var(--link-hover-color);
 }
 
-.ts-connect-btn {
+.main-button {
     display: inline-block;
     padding: 0.8em 1.5em;
     font-size: 1rem;
@@ -65,32 +65,56 @@ html, body {
     text-align: center;
     text-decoration: none;
     background-color: var(--button-bg-color);
-    color: #fcfcfc;
+    color: #dfdfdf;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
 
-.ts-connect-btn:hover {
+.main-button:hover {
     background-color: var(--button-hover-bg-color);
 }
 
-.footer-text {
+::selection {
+    color: white;
+    background: var(--button-hover-bg-color);
+}
+
+::-moz-selection {
+    color: white;
+    background: var(--button-hover-bg-color);
+}
+
+.footer-paths {
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    margin-left: 1rem;
+    margin-bottom: 0.6rem;
+    padding-right: 6rem;
+    font-size: 1rem;
+    color: #888;
+}
+
+.footer-watermark {
     position: fixed;
     bottom: 10px;
     right: 10px;
     font-size: 1.2rem;
     color: #888;
     font-family: 'Brittany Signature', sans-serif;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 @media screen and (max-width: 768px) {
-    .description {
+    .main-description {
         font-size: 1rem;
     }
 
-    .footer-text {
+    .footer-watermark {
         font-size: 1rem;
     }
 }
@@ -100,7 +124,7 @@ html, body {
         padding: 1rem;
     }
 
-    .description {
+    .main-description {
         font-size: 0.9rem;
     }
 
@@ -108,7 +132,11 @@ html, body {
         font-size: 0.9rem;
     }
 
-    .footer-text {
+    .footer-paths {
+        font-size: 0.8rem;
+    }
+
+    .footer-watermark {
         font-size: 0.8rem;
     }
 }
