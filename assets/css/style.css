@@ -11,8 +11,8 @@
     src: local('Brittany Signature'), url('../fonts/BrittanySignature-LjyZ.woff') format('woff');
 }
 
-:root {
-    --bg-color: rgb(35, 39, 42);
+:root {   
+    --bg-color: #1E1F22;
     --text-color: #dfdfdf;
     --link-hover-color: #9e9fa0;
     --button-bg-color: #404249;
