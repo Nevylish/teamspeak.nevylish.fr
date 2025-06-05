@@ -1,48 +1,108 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta name="robots" content="noindex, nofollow">
+  <head>
+    <meta name="robots" content="noindex, nofollow" />
     <title>Connexion au serveur TeamSpeak - Nevylish</title>
-    <meta charset="UTF-8">
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="Nevylish" name="author">
-    <meta content="Cliquez sur ce lien pour vous connecter au serveur TeamSpeak. | Liste des noms de domaines: (teamspeak, ts, voice).nevylish.fr & .nevylish.ch"
-          name="description">
-    <meta content="Connexion au serveur TeamSpeak - Nevylish" property="og:title"/>
-    <meta content="website" property="og:type"/>
-    <meta content="https://teamspeak.nevylish.fr" property="og:url"/>
-    <meta content="https://teamspeak.nevylish.fr/assets/images/favicon.ico" property="og:image"/>
-    <meta content="Cliquez sur ce lien pour vous connecter au serveur TeamSpeak. | Liste des noms de domaines: (teamspeak, ts, voice).nevylish.fr & .nevylish.ch"
-          property="og:description"/>
-    <meta content="#5865F2" name="theme-color">
-    <link href="assets/images/favicon.ico" rel="icon" type="image/png"/>
-    <link href="assets/css/style.css?v=<?= time(); ?>" rel="stylesheet">
-</head>
-<body>
-<div class="container">
-    <picture>
-        <source media="(max-width: 480px)" srcset="assets/images/mobile.png">
-        <img alt="Ouvrir TeamSpeak 3 > Connexions > Se connecter > Pseudo ou adresse serveur: ts.nevylish.ch > Se connecter"
-             class="image" src="assets/images/desktop.png">
-    </picture>
-    <p class="main-description">
-        Vous pouvez cliquer sur le bouton ci-dessous pour ouvrir <a class="download"
-                                                                    href="https://www.teamspeak.com/fr/downloads/#ts3client"
-                                                                    target="_blank">TeamSpeak</a> et vous connecter
-        automatiquement ou entrer le lien comme sur l'image ci-dessus.
-    </p>
-    <a class="main-button">
-        Ouvrir TeamSpeak
-    </a>
-    <div class="footer-paths">Liste des noms de domaines: (teamspeak, ts, voice).nevylish.ch & .nevylish.fr</div>
-    <div class="footer-watermark">Nevylish</div>
-</div>
-</body>
-<script>
-    document.addEventListener('DOMContentLoaded', () => {
-        const domain = window.location.hostname;
-        const element = document.getElementsByClassName("main-button")[0];
-        element.href = `ts3server://${domain}/`;
+    <meta charset="UTF-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="Nevylish" name="author" />
+    <meta
+      content="Cliquez sur ce lien pour vous connecter au serveur TeamSpeak. | Liste des noms de domaines: (teamspeak, ts, voice).nevylish.fr & .nevylish.ch"
+      name="description"
+    />
+    <meta
+      content="Connexion au serveur TeamSpeak - Nevylish"
+      property="og:title"
+    />
+    <meta content="website" property="og:type" />
+    <meta content="https://teamspeak.nevylish.fr" property="og:url" />
+    <meta
+      content="https://teamspeak.nevylish.fr/assets/images/favicon.ico"
+      property="og:image"
+    />
+    <meta
+      content="Cliquez sur ce lien pour vous connecter au serveur TeamSpeak. | Liste des noms de domaines: (teamspeak, ts, voice).nevylish.fr & .nevylish.ch"
+      property="og:description"
+    />
+    <meta content="#5865F2" name="theme-color" />
+    <link href="assets/images/favicon.ico" rel="icon" type="image/png" />
+    <link href="assets/css/style.css?v=<?= time(); ?>" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="container">
+      <picture>
+        <source
+          media="(max-width: 709px)"
+          srcset="assets/images/mobile.png"
+          type="image/png"
+        />
+        <source
+          media="(min-width: 710px)"
+          srcset="assets/images/desktop.png"
+          type="image/png"
+        />
+        <img
+          alt="Ouvrir TeamSpeak 3 > Connexions > Se connecter > Pseudo ou adresse serveur: ts.nevylish.ch > Se connecter"
+          class="image"
+          src="assets/images/desktop.png"
+        />
+      </picture>
+      <p class="main-description">
+        Vous pouvez cliquer sur le bouton ci-dessous pour ouvrir
+        <a
+          class="download"
+          href="https://www.teamspeak.com/fr/downloads/#ts3client"
+          target="_blank"
+          >TeamSpeak</a
+        >
+        et vous connecter automatiquement, sinon utilisez l'URL de cette page.
+      </p>
+      <div class="buttons-container">
+        <a class="main-button">
+          <svg
+            class="button-icon"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M19 19H5V5H12V3H5C3.9 3 3 3.9 3 5V19C3 20.1 3.9 21 5 21H19C20.1 21 21 20.1 21 19V12H19V19ZM14 3V5H17.59L7.76 14.83L9.17 16.24L19 6.41V10H21V3H14Z"
+              fill="currentColor"
+            />
+          </svg>
+          Ouvrir TeamSpeak
+        </a>
+        <a
+          href="https://www.teamspeak.com/fr/downloads/#ts3client"
+          target="_blank"
+          class="download-button"
+        >
+          <svg
+            class="button-icon"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M19 9H15V3H9V9H5L12 16L19 9ZM5 18V20H19V18H5Z"
+              fill="currentColor"
+            />
+          </svg>
+          Télécharger TeamSpeak
+        </a>
+      </div>
+      <div class="footer-watermark">Nevylish</div>
+      <div class="footer-paths">
+        Liste des noms de domaines: (teamspeak, ts, voice).nevylish.ch &
+        .nevylish.fr
+      </div>
+    </div>
+  </body>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const domain = window.location.hostname;
+      const element = document.getElementsByClassName("main-button")[0];
+      element.href = `ts3server://${domain}/`;
     });
-</script>
+  </script>
 </html>
